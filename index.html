@@ -114,7 +114,9 @@
            
     </body>
     <script>
-        window.onload(center);
+       window.addEventListener("load", (event) => {
+          center();
+        });
         window.addEventListener ('resize', center,true);
         function center() {
             let width = window.innerWidth;
